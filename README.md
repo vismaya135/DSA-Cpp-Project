@@ -152,6 +152,76 @@ This application allows users to manage tasks with the following features:
 ![Screenshot (23)](https://github.com/user-attachments/assets/d9aad7fe-4d81-4249-8432-d8dd80b8036d)
 ![Screenshot (24)](https://github.com/user-attachments/assets/2ab27470-2504-467c-b11c-5bb6edafc510)
 
+# Social Media Application
+
+## Overview
+
+This social media application provides features for managing users, friendships, and group communications. Key features include:
+
+- Adding users
+- Making friends
+- Sending messages
+- Editing messages
+- Deleting messages
+- Displaying all friendships
+- Displaying all users
+- Displaying group messages
+
+## Classes
+
+### Message Class
+
+- **Attributes:**
+  - `sender`: The name of the user who sent the message.
+  - `content`: The content of the message.
+
+- **Methods:**
+  - `displayMessage()`: Displays the message in the format "sender: content".
+  - `editMessage(const string& newContent)`: Edits the content of the message.
+
+### SocialGroup Class
+
+- **Attributes:**
+  - `groupName`: Name of the social group.
+  - `messages`: A list of messages in the group.
+  - `members`: A list of members in the group.
+  - `host`: The host of the group.
+
+- **Methods:**
+  - `addMember(const string& userName)`: Adds a new member to the group.
+  - `sendMessage(const string& userName, const string& content)`: Sends a message to the group.
+  - `editMessage(int index, const string& newContent)`: Edits a message by its index (only if the index is valid).
+  - `deleteMessage(int index)`: Deletes a message by its index (only if the index is valid).
+  - `displayGroupMessages() const`: Displays all messages in the group.
+  - `getHost() const`: Returns the host of the group.
+
+### User Class
+
+- **Attributes:**
+  - `firstName`: First name of the user.
+  - `lastName`: Last name of the user.
+  - `age`: Age of the user.
+  - `gender`: Gender of the user.
+
+- **Methods:**
+  - No specific methods are defined for this class. It serves as a data structure to store user information.
+
+## Global Data Structures
+
+- `map<string, User> mapUserName`:
+  - Maps usernames to `User` objects, storing all registered users.
+
+- `map<string, set<string>> Friends`:
+  - Maps usernames to a set of their friends, storing friendship relationships.
+![Screenshot (26)](https://github.com/user-attachments/assets/902f64d6-2239-4ccd-a156-72c18949aa19)
+![Screenshot (27)](https://github.com/user-attachments/assets/8844957f-b119-4e6b-829d-b8a63f0c87e7)
+![Screenshot (31)](https://github.com/user-attachments/assets/44b37801-6fb0-4c09-a5d0-b370775a9651)
+![Screenshot (29)](https://github.com/user-attachments/assets/afea7b30-6146-47b2-a173-23349322c2e1)
+![Screenshot (28)](https://github.com/user-attachments/assets/ecc31641-106c-4d98-8ca7-be4f33174257)
+
+
+
+
 
 
 
