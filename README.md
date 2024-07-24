@@ -1,9 +1,4 @@
-#Game Project
-```markdown![Screenshot (24)](https://github.com/user-attachments/assets/997bedcf-b8be-4fb3-a490-2243ace926ce)
-![Screenshot (23)](https://github.com/user-attachments/assets/77d6bc54-9897-43f8-8cf6-87e404781308)
-![Screenshot (22)](https://github.com/user-attachments/assets/4d0cf2f8-8c31-409a-8c61-843cdaabca57)
-
-
+# Game Project
 
 ## Project Features
 - **Playing the game**
@@ -66,7 +61,7 @@
 
 ### 5. Exit
 - The game loop ends and the program exits with a thank-you message.
-```
+
 ![Screenshot (20)](https://github.com/user-attachments/assets/c9fde0be-e485-41d8-aa8e-6bc783332e3a)
 ![Screenshot (19)](https://github.com/user-attachments/assets/7603d8e3-63ce-49a2-ad02-499307a72251)
 ![Screenshot (18)](https://github.com/user-attachments/assets/e7e23f6d-56dc-43a3-89e1-58ebc6feebc7)
@@ -74,6 +69,8 @@
 # TO DO LIST
 
 This application allows users to manage tasks with the following features:
+
+## Features
 
 1. **Add Task**: Add new tasks with description, category, priority, and due date.
 2. **View Tasks by Priority**: View tasks sorted by priority (HIGH, MEDIUM, LOW).
@@ -86,7 +83,7 @@ This application allows users to manage tasks with the following features:
 
 ## Classes and Data Structures
 
-### 1. Task Class
+### Task Class
 
 **Attributes**:
 - `description`: Description of the task.
@@ -97,59 +94,66 @@ This application allows users to manage tasks with the following features:
 
 **Constructor**: Initializes the task attributes.
 
-### 2. Global Data Structures
+### Global Data Structures
 
 - `NotesAdded`: A vector to store all tasks.
 - `categories`: A vector of predefined categories.
 
 ## Functions
 
-### 1. displayTasksByPriority
+### displayTasksByPriority
 
 **Functionality**: Sorts tasks by priority and displays them.
 
 **Details**: Tasks are sorted in descending order of priority (HIGH, MEDIUM, LOW). If two tasks have the same priority, they maintain their relative order.
 
-### 2. remindTasksPastDue
+### remindTasksPastDue
 
 **Functionality**: Displays tasks that are past their due date and not completed.
 
 **Details**: Compares the current date with the due date of each task. If a task is past due and not completed, it is displayed.
 
-### 3. sortTasksByDueDate
+### sortTasksByDueDate
 
 **Functionality**: Sorts tasks by due date (earliest first) and displays them.
 
 **Details**: Tasks are sorted based on their due date using a lambda function.
 
-### 4. filterTasksByCategory
+### filterTasksByCategory
 
 **Functionality**: Filters and displays tasks based on user-selected category.
 
 **Details**: Prompts the user to select a category and displays tasks that belong to that category.
 
-### 5. markTaskAsCompleted
+### markTaskAsCompleted
 
 **Functionality**: Marks a specific task as completed.
 
 **Details**: Prompts the user to enter the task number and marks the corresponding task as completed.
 
-### 6. deleteTask
+### deleteTask
 
 **Functionality**: Deletes a specific task.
 
 **Details**: Prompts the user to enter the task number and deletes the corresponding task from the list.
 
-### 7. addTask
+### addTask
 
 **Functionality**: Adds a new task to the task list.
 
 **Details**: Prompts the user to enter task description, select a category, enter priority, and automatically sets the current date as the due date.
 
-### 8. displayMenu
+### displayMenu
 
 **Functionality**: Displays the menu and handles user input.
 
 **Details**: Provides options to the user for different functionalities and calls the appropriate function based on user input.
+![Screenshot (22)](https://github.com/user-attachments/assets/2e3226cd-0c97-4a3e-9c25-e9e1b3e86278)
+![Screenshot (23)](https://github.com/user-attachments/assets/d9aad7fe-4d81-4249-8432-d8dd80b8036d)
+![Screenshot (24)](https://github.com/user-attachments/assets/2ab27470-2504-467c-b11c-5bb6edafc510)
+
+
+
+
 
 
